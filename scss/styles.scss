@@ -1,0 +1,44 @@
+@import "vars";
+@import "functions";
+
+body {
+  margin: 0 0 20px;
+  padding: 0;
+  background: #ccc;
+
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+
+  > div {
+    width: 98%;
+    float: left;
+    padding: 0 1%;
+
+    h2 {
+      font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+      text-align: center;
+    }
+
+    div {
+      float: left;
+      width: 9.0909%;
+      height: 50px;
+    }
+
+    .tint {
+      height: 25px;
+    }
+  }
+}
+
+@import "triadic";
+@import "analogous";
+@import "split";
+@import "tetradic";
+@import "square";

@@ -1,0 +1,22 @@
+@import "vars";
+@import "functions";
+
+.triadic {
+  @for $i from 1 through 3 {
+    @for $j from 0 through 10 {
+      .colour#{$i}-#{$j} {
+        @if $j < 5 {
+          background: get_shade(triadic($base, $i), ($j+1) * 10);
+          @if $j == 0 { clear: both; }
+        } @else if $j > 5 {
+          background: get_tint(triadic($base, $i), ($j - 5) * 10);
+        } @else {
+          background: triadic($base, $i);
+        }
+      }
+      .colour#{$i}-t#{$j} {
+        background: get_tone(triadic($base, $i), $j * 10);
+      }
+    }
+  }
+}

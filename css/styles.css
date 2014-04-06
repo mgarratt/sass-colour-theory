@@ -1,0 +1,1292 @@
+/**
+ * Pure Hue
+ *
+ * Return the full colour based on hue
+ *
+ * @param Color $colour The colour to get the pure hue of
+ * @return Color
+ */
+/**
+ * Get Shade
+ *
+ * Return a shade of the base colour, 100 increments are available from base
+ * colour (100) to black (0).
+ *
+ * @param Color $colour Base colour
+ * @param Int $shade Shade increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tint
+ *
+ * Return a tint of the base colour, 100 increments are available from base
+ * colour (0) to white (100)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tint Tint increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tone
+ *
+ * Return a tone of the base colour, 100 increments are available from base
+ * colour (100) to grey (0)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tone Tone increment to return from 0 to 1000
+ * @return Color
+ */
+/**
+ * Triadic
+ *
+ * Get a component of a triadic colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Analogous
+ *
+ * Get a component of an analogous colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Split
+ *
+ * Get a component of a split colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Tetradic
+ *
+ * Get a component of a tetradic colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Square
+ *
+ * Get a component of a square colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+body {
+  margin: 0 0 20px;
+  padding: 0;
+  background: #ccc; }
+  body:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+  body > div {
+    width: 98%;
+    float: left;
+    padding: 0 1%; }
+    body > div h2 {
+      font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+      text-align: center; }
+    body > div div {
+      float: left;
+      width: 9.0909%;
+      height: 50px; }
+    body > div .tint {
+      height: 25px; }
+
+/**
+ * Pure Hue
+ *
+ * Return the full colour based on hue
+ *
+ * @param Color $colour The colour to get the pure hue of
+ * @return Color
+ */
+/**
+ * Get Shade
+ *
+ * Return a shade of the base colour, 100 increments are available from base
+ * colour (100) to black (0).
+ *
+ * @param Color $colour Base colour
+ * @param Int $shade Shade increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tint
+ *
+ * Return a tint of the base colour, 100 increments are available from base
+ * colour (0) to white (100)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tint Tint increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tone
+ *
+ * Return a tone of the base colour, 100 increments are available from base
+ * colour (100) to grey (0)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tone Tone increment to return from 0 to 1000
+ * @return Color
+ */
+/**
+ * Triadic
+ *
+ * Get a component of a triadic colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Analogous
+ *
+ * Get a component of an analogous colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Split
+ *
+ * Get a component of a split colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Tetradic
+ *
+ * Get a component of a tetradic colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Square
+ *
+ * Get a component of a square colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+.triadic .colour1-0 {
+  background: #040c13;
+  clear: both; }
+.triadic .colour1-t0 {
+  background: #767676; }
+.triadic .colour1-1 {
+  background: #091827; }
+.triadic .colour1-t1 {
+  background: #6f777e; }
+.triadic .colour1-2 {
+  background: #0d243a; }
+.triadic .colour1-t2 {
+  background: #687785; }
+.triadic .colour1-3 {
+  background: #12304d; }
+.triadic .colour1-t3 {
+  background: #60778d; }
+.triadic .colour1-4 {
+  background: #163c60; }
+.triadic .colour1-t4 {
+  background: #597794; }
+.triadic .colour1-5 {
+  background: #2c79c1; }
+.triadic .colour1-t5 {
+  background: #51789c; }
+.triadic .colour1-6 {
+  background: #3787d1; }
+.triadic .colour1-t6 {
+  background: #4a78a3; }
+.triadic .colour1-7 {
+  background: #4d94d6; }
+.triadic .colour1-t7 {
+  background: #4278ab; }
+.triadic .colour1-8 {
+  background: #63a1dc; }
+.triadic .colour1-t8 {
+  background: #3b78b2; }
+.triadic .colour1-9 {
+  background: #7aafe1; }
+.triadic .colour1-t9 {
+  background: #3379ba; }
+.triadic .colour1-10 {
+  background: #90bce6; }
+.triadic .colour1-t10 {
+  background: #2c79c1; }
+.triadic .colour2-0 {
+  background: #13040c;
+  clear: both; }
+.triadic .colour2-t0 {
+  background: #767676; }
+.triadic .colour2-1 {
+  background: #270918; }
+.triadic .colour2-t1 {
+  background: #7e6f77; }
+.triadic .colour2-2 {
+  background: #3a0d24; }
+.triadic .colour2-t2 {
+  background: #856877; }
+.triadic .colour2-3 {
+  background: #4d1230; }
+.triadic .colour2-t3 {
+  background: #8d6077; }
+.triadic .colour2-4 {
+  background: #60163c; }
+.triadic .colour2-t4 {
+  background: #945977; }
+.triadic .colour2-5 {
+  background: #c12c79; }
+.triadic .colour2-t5 {
+  background: #9c5178; }
+.triadic .colour2-6 {
+  background: #d13787; }
+.triadic .colour2-t6 {
+  background: #a34a78; }
+.triadic .colour2-7 {
+  background: #d64d94; }
+.triadic .colour2-t7 {
+  background: #ab4278; }
+.triadic .colour2-8 {
+  background: #dc63a1; }
+.triadic .colour2-t8 {
+  background: #b23b78; }
+.triadic .colour2-9 {
+  background: #e17aaf; }
+.triadic .colour2-t9 {
+  background: #ba3379; }
+.triadic .colour2-10 {
+  background: #e690bc; }
+.triadic .colour2-t10 {
+  background: #c12c79; }
+.triadic .colour3-0 {
+  background: #0c1304;
+  clear: both; }
+.triadic .colour3-t0 {
+  background: #767676; }
+.triadic .colour3-1 {
+  background: #182709; }
+.triadic .colour3-t1 {
+  background: #777e6f; }
+.triadic .colour3-2 {
+  background: #243a0d; }
+.triadic .colour3-t2 {
+  background: #778568; }
+.triadic .colour3-3 {
+  background: #304d12; }
+.triadic .colour3-t3 {
+  background: #778d60; }
+.triadic .colour3-4 {
+  background: #3c6016; }
+.triadic .colour3-t4 {
+  background: #779459; }
+.triadic .colour3-5 {
+  background: #79c12c; }
+.triadic .colour3-t5 {
+  background: #789c51; }
+.triadic .colour3-6 {
+  background: #87d137; }
+.triadic .colour3-t6 {
+  background: #78a34a; }
+.triadic .colour3-7 {
+  background: #94d64d; }
+.triadic .colour3-t7 {
+  background: #78ab42; }
+.triadic .colour3-8 {
+  background: #a1dc63; }
+.triadic .colour3-t8 {
+  background: #78b23b; }
+.triadic .colour3-9 {
+  background: #afe17a; }
+.triadic .colour3-t9 {
+  background: #79ba33; }
+.triadic .colour3-10 {
+  background: #bce690; }
+.triadic .colour3-t10 {
+  background: #79c12c; }
+
+/**
+ * Pure Hue
+ *
+ * Return the full colour based on hue
+ *
+ * @param Color $colour The colour to get the pure hue of
+ * @return Color
+ */
+/**
+ * Get Shade
+ *
+ * Return a shade of the base colour, 100 increments are available from base
+ * colour (100) to black (0).
+ *
+ * @param Color $colour Base colour
+ * @param Int $shade Shade increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tint
+ *
+ * Return a tint of the base colour, 100 increments are available from base
+ * colour (0) to white (100)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tint Tint increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tone
+ *
+ * Return a tone of the base colour, 100 increments are available from base
+ * colour (100) to grey (0)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tone Tone increment to return from 0 to 1000
+ * @return Color
+ */
+/**
+ * Triadic
+ *
+ * Get a component of a triadic colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Analogous
+ *
+ * Get a component of an analogous colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Split
+ *
+ * Get a component of a split colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Tetradic
+ *
+ * Get a component of a tetradic colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Square
+ *
+ * Get a component of a square colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+.analogous .colour1-0 {
+  background: #040c13;
+  clear: both; }
+.analogous .colour1-t0 {
+  background: #767676; }
+.analogous .colour1-1 {
+  background: #091827; }
+.analogous .colour1-t1 {
+  background: #6f777e; }
+.analogous .colour1-2 {
+  background: #0d243a; }
+.analogous .colour1-t2 {
+  background: #687785; }
+.analogous .colour1-3 {
+  background: #12304d; }
+.analogous .colour1-t3 {
+  background: #60778d; }
+.analogous .colour1-4 {
+  background: #163c60; }
+.analogous .colour1-t4 {
+  background: #597794; }
+.analogous .colour1-5 {
+  background: #2c79c1; }
+.analogous .colour1-t5 {
+  background: #51789c; }
+.analogous .colour1-6 {
+  background: #3787d1; }
+.analogous .colour1-t6 {
+  background: #4a78a3; }
+.analogous .colour1-7 {
+  background: #4d94d6; }
+.analogous .colour1-t7 {
+  background: #4278ab; }
+.analogous .colour1-8 {
+  background: #63a1dc; }
+.analogous .colour1-t8 {
+  background: #3b78b2; }
+.analogous .colour1-9 {
+  background: #7aafe1; }
+.analogous .colour1-t9 {
+  background: #3379ba; }
+.analogous .colour1-10 {
+  background: #90bce6; }
+.analogous .colour1-t10 {
+  background: #2c79c1; }
+.analogous .colour2-0 {
+  background: #040513;
+  clear: both; }
+.analogous .colour2-t0 {
+  background: #767676; }
+.analogous .colour2-1 {
+  background: #090927; }
+.analogous .colour2-t1 {
+  background: #6f6f7e; }
+.analogous .colour2-2 {
+  background: #0d0e3a; }
+.analogous .colour2-t2 {
+  background: #686885; }
+.analogous .colour2-3 {
+  background: #12134d; }
+.analogous .colour2-t3 {
+  background: #60618d; }
+.analogous .colour2-4 {
+  background: #161760; }
+.analogous .colour2-t4 {
+  background: #595a94; }
+.analogous .colour2-5 {
+  background: #2c2ec1; }
+.analogous .colour2-t5 {
+  background: #51529c; }
+.analogous .colour2-6 {
+  background: #373ad1; }
+.analogous .colour2-t6 {
+  background: #4a4ba3; }
+.analogous .colour2-7 {
+  background: #4d4fd6; }
+.analogous .colour2-t7 {
+  background: #4244ab; }
+.analogous .colour2-8 {
+  background: #6365dc; }
+.analogous .colour2-t8 {
+  background: #3b3db2; }
+.analogous .colour2-9 {
+  background: #7a7be1; }
+.analogous .colour2-t9 {
+  background: #3336ba; }
+.analogous .colour2-10 {
+  background: #9091e6; }
+.analogous .colour2-t10 {
+  background: #2c2ec1; }
+.analogous .colour3-0 {
+  background: #041313;
+  clear: both; }
+.analogous .colour3-t0 {
+  background: #767676; }
+.analogous .colour3-1 {
+  background: #092726; }
+.analogous .colour3-t1 {
+  background: #6f7e7e; }
+.analogous .colour3-2 {
+  background: #0d3a39; }
+.analogous .colour3-t2 {
+  background: #688585; }
+.analogous .colour3-3 {
+  background: #124d4c; }
+.analogous .colour3-t3 {
+  background: #608d8c; }
+.analogous .colour3-4 {
+  background: #16605f; }
+.analogous .colour3-t4 {
+  background: #599493; }
+.analogous .colour3-5 {
+  background: #2cc1bf; }
+.analogous .colour3-t5 {
+  background: #519c9b; }
+.analogous .colour3-6 {
+  background: #37d1cf; }
+.analogous .colour3-t6 {
+  background: #4aa3a2; }
+.analogous .colour3-7 {
+  background: #4dd6d4; }
+.analogous .colour3-t7 {
+  background: #42aba9; }
+.analogous .colour3-8 {
+  background: #63dcda; }
+.analogous .colour3-t8 {
+  background: #3bb2b0; }
+.analogous .colour3-9 {
+  background: #7ae1df; }
+.analogous .colour3-t9 {
+  background: #33bab7; }
+.analogous .colour3-10 {
+  background: #90e6e4; }
+.analogous .colour3-t10 {
+  background: #2cc1bf; }
+
+/**
+ * Pure Hue
+ *
+ * Return the full colour based on hue
+ *
+ * @param Color $colour The colour to get the pure hue of
+ * @return Color
+ */
+/**
+ * Get Shade
+ *
+ * Return a shade of the base colour, 100 increments are available from base
+ * colour (100) to black (0).
+ *
+ * @param Color $colour Base colour
+ * @param Int $shade Shade increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tint
+ *
+ * Return a tint of the base colour, 100 increments are available from base
+ * colour (0) to white (100)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tint Tint increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tone
+ *
+ * Return a tone of the base colour, 100 increments are available from base
+ * colour (100) to grey (0)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tone Tone increment to return from 0 to 1000
+ * @return Color
+ */
+/**
+ * Triadic
+ *
+ * Get a component of a triadic colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Analogous
+ *
+ * Get a component of an analogous colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Split
+ *
+ * Get a component of a split colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Tetradic
+ *
+ * Get a component of a tetradic colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Square
+ *
+ * Get a component of a square colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+.split .colour1-0 {
+  background: #040c13;
+  clear: both; }
+.split .colour1-t0 {
+  background: #767676; }
+.split .colour1-1 {
+  background: #091827; }
+.split .colour1-t1 {
+  background: #6f777e; }
+.split .colour1-2 {
+  background: #0d243a; }
+.split .colour1-t2 {
+  background: #687785; }
+.split .colour1-3 {
+  background: #12304d; }
+.split .colour1-t3 {
+  background: #60778d; }
+.split .colour1-4 {
+  background: #163c60; }
+.split .colour1-t4 {
+  background: #597794; }
+.split .colour1-5 {
+  background: #2c79c1; }
+.split .colour1-t5 {
+  background: #51789c; }
+.split .colour1-6 {
+  background: #3787d1; }
+.split .colour1-t6 {
+  background: #4a78a3; }
+.split .colour1-7 {
+  background: #4d94d6; }
+.split .colour1-t7 {
+  background: #4278ab; }
+.split .colour1-8 {
+  background: #63a1dc; }
+.split .colour1-t8 {
+  background: #3b78b2; }
+.split .colour1-9 {
+  background: #7aafe1; }
+.split .colour1-t9 {
+  background: #3379ba; }
+.split .colour1-10 {
+  background: #90bce6; }
+.split .colour1-t10 {
+  background: #2c79c1; }
+.split .colour2-0 {
+  background: #130405;
+  clear: both; }
+.split .colour2-t0 {
+  background: #767676; }
+.split .colour2-1 {
+  background: #270909; }
+.split .colour2-t1 {
+  background: #7e6f6f; }
+.split .colour2-2 {
+  background: #3a0d0e; }
+.split .colour2-t2 {
+  background: #856868; }
+.split .colour2-3 {
+  background: #4d1213; }
+.split .colour2-t3 {
+  background: #8d6061; }
+.split .colour2-4 {
+  background: #601617; }
+.split .colour2-t4 {
+  background: #94595a; }
+.split .colour2-5 {
+  background: #c12c2e; }
+.split .colour2-t5 {
+  background: #9c5152; }
+.split .colour2-6 {
+  background: #d1373a; }
+.split .colour2-t6 {
+  background: #a34a4b; }
+.split .colour2-7 {
+  background: #d64d4f; }
+.split .colour2-t7 {
+  background: #ab4244; }
+.split .colour2-8 {
+  background: #dc6365; }
+.split .colour2-t8 {
+  background: #b23b3d; }
+.split .colour2-9 {
+  background: #e17a7b; }
+.split .colour2-t9 {
+  background: #ba3336; }
+.split .colour2-10 {
+  background: #e69091; }
+.split .colour2-t10 {
+  background: #c12c2e; }
+.split .colour3-0 {
+  background: #131304;
+  clear: both; }
+.split .colour3-t0 {
+  background: #767676; }
+.split .colour3-1 {
+  background: #272609; }
+.split .colour3-t1 {
+  background: #7e7e6f; }
+.split .colour3-2 {
+  background: #3a390d; }
+.split .colour3-t2 {
+  background: #858568; }
+.split .colour3-3 {
+  background: #4d4c12; }
+.split .colour3-t3 {
+  background: #8d8c60; }
+.split .colour3-4 {
+  background: #605f16; }
+.split .colour3-t4 {
+  background: #949359; }
+.split .colour3-5 {
+  background: #c1bf2c; }
+.split .colour3-t5 {
+  background: #9c9b51; }
+.split .colour3-6 {
+  background: #d1cf37; }
+.split .colour3-t6 {
+  background: #a3a24a; }
+.split .colour3-7 {
+  background: #d6d44d; }
+.split .colour3-t7 {
+  background: #aba942; }
+.split .colour3-8 {
+  background: #dcda63; }
+.split .colour3-t8 {
+  background: #b2b03b; }
+.split .colour3-9 {
+  background: #e1df7a; }
+.split .colour3-t9 {
+  background: #bab733; }
+.split .colour3-10 {
+  background: #e6e490; }
+.split .colour3-t10 {
+  background: #c1bf2c; }
+
+/**
+ * Pure Hue
+ *
+ * Return the full colour based on hue
+ *
+ * @param Color $colour The colour to get the pure hue of
+ * @return Color
+ */
+/**
+ * Get Shade
+ *
+ * Return a shade of the base colour, 100 increments are available from base
+ * colour (100) to black (0).
+ *
+ * @param Color $colour Base colour
+ * @param Int $shade Shade increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tint
+ *
+ * Return a tint of the base colour, 100 increments are available from base
+ * colour (0) to white (100)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tint Tint increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tone
+ *
+ * Return a tone of the base colour, 100 increments are available from base
+ * colour (100) to grey (0)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tone Tone increment to return from 0 to 1000
+ * @return Color
+ */
+/**
+ * Triadic
+ *
+ * Get a component of a triadic colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Analogous
+ *
+ * Get a component of an analogous colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Split
+ *
+ * Get a component of a split colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Tetradic
+ *
+ * Get a component of a tetradic colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Square
+ *
+ * Get a component of a square colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+.tetradic .colour1-0 {
+  background: #040c13;
+  clear: both; }
+.tetradic .colour1-t0 {
+  background: #767676; }
+.tetradic .colour1-1 {
+  background: #091827; }
+.tetradic .colour1-t1 {
+  background: #6f777e; }
+.tetradic .colour1-2 {
+  background: #0d243a; }
+.tetradic .colour1-t2 {
+  background: #687785; }
+.tetradic .colour1-3 {
+  background: #12304d; }
+.tetradic .colour1-t3 {
+  background: #60778d; }
+.tetradic .colour1-4 {
+  background: #163c60; }
+.tetradic .colour1-t4 {
+  background: #597794; }
+.tetradic .colour1-5 {
+  background: #2c79c1; }
+.tetradic .colour1-t5 {
+  background: #51789c; }
+.tetradic .colour1-6 {
+  background: #3787d1; }
+.tetradic .colour1-t6 {
+  background: #4a78a3; }
+.tetradic .colour1-7 {
+  background: #4d94d6; }
+.tetradic .colour1-t7 {
+  background: #4278ab; }
+.tetradic .colour1-8 {
+  background: #63a1dc; }
+.tetradic .colour1-t8 {
+  background: #3b78b2; }
+.tetradic .colour1-9 {
+  background: #7aafe1; }
+.tetradic .colour1-t9 {
+  background: #3379ba; }
+.tetradic .colour1-10 {
+  background: #90bce6; }
+.tetradic .colour1-t10 {
+  background: #2c79c1; }
+.tetradic .colour2-0 {
+  background: #0c0413;
+  clear: both; }
+.tetradic .colour2-t0 {
+  background: #767676; }
+.tetradic .colour2-1 {
+  background: #170927; }
+.tetradic .colour2-t1 {
+  background: #766f7e; }
+.tetradic .colour2-2 {
+  background: #230d3a; }
+.tetradic .colour2-t2 {
+  background: #766885; }
+.tetradic .colour2-3 {
+  background: #2e124d; }
+.tetradic .colour2-t3 {
+  background: #76608d; }
+.tetradic .colour2-4 {
+  background: #3a1660; }
+.tetradic .colour2-t4 {
+  background: #765994; }
+.tetradic .colour2-5 {
+  background: #742cc1; }
+.tetradic .colour2-t5 {
+  background: #75519c; }
+.tetradic .colour2-6 {
+  background: #8237d1; }
+.tetradic .colour2-t6 {
+  background: #754aa3; }
+.tetradic .colour2-7 {
+  background: #8f4dd6; }
+.tetradic .colour2-t7 {
+  background: #7542ab; }
+.tetradic .colour2-8 {
+  background: #9d63dc; }
+.tetradic .colour2-t8 {
+  background: #753bb2; }
+.tetradic .colour2-9 {
+  background: #ab7ae1; }
+.tetradic .colour2-t9 {
+  background: #7433ba; }
+.tetradic .colour2-10 {
+  background: #b990e6; }
+.tetradic .colour2-t10 {
+  background: #742cc1; }
+.tetradic .colour3-0 {
+  background: #130c04;
+  clear: both; }
+.tetradic .colour3-t0 {
+  background: #767676; }
+.tetradic .colour3-1 {
+  background: #271709; }
+.tetradic .colour3-t1 {
+  background: #7e766f; }
+.tetradic .colour3-2 {
+  background: #3a230d; }
+.tetradic .colour3-t2 {
+  background: #857668; }
+.tetradic .colour3-3 {
+  background: #4d2e12; }
+.tetradic .colour3-t3 {
+  background: #8d7660; }
+.tetradic .colour3-4 {
+  background: #603a16; }
+.tetradic .colour3-t4 {
+  background: #947659; }
+.tetradic .colour3-5 {
+  background: #c1742c; }
+.tetradic .colour3-t5 {
+  background: #9c7551; }
+.tetradic .colour3-6 {
+  background: #d18237; }
+.tetradic .colour3-t6 {
+  background: #a3754a; }
+.tetradic .colour3-7 {
+  background: #d68f4d; }
+.tetradic .colour3-t7 {
+  background: #ab7542; }
+.tetradic .colour3-8 {
+  background: #dc9d63; }
+.tetradic .colour3-t8 {
+  background: #b2753b; }
+.tetradic .colour3-9 {
+  background: #e1ab7a; }
+.tetradic .colour3-t9 {
+  background: #ba7433; }
+.tetradic .colour3-10 {
+  background: #e6b990; }
+.tetradic .colour3-t10 {
+  background: #c1742c; }
+.tetradic .colour4-0 {
+  background: #0c1304;
+  clear: both; }
+.tetradic .colour4-t0 {
+  background: #767676; }
+.tetradic .colour4-1 {
+  background: #182709; }
+.tetradic .colour4-t1 {
+  background: #777e6f; }
+.tetradic .colour4-2 {
+  background: #243a0d; }
+.tetradic .colour4-t2 {
+  background: #778568; }
+.tetradic .colour4-3 {
+  background: #304d12; }
+.tetradic .colour4-t3 {
+  background: #778d60; }
+.tetradic .colour4-4 {
+  background: #3c6016; }
+.tetradic .colour4-t4 {
+  background: #779459; }
+.tetradic .colour4-5 {
+  background: #79c12c; }
+.tetradic .colour4-t5 {
+  background: #789c51; }
+.tetradic .colour4-6 {
+  background: #87d137; }
+.tetradic .colour4-t6 {
+  background: #78a34a; }
+.tetradic .colour4-7 {
+  background: #94d64d; }
+.tetradic .colour4-t7 {
+  background: #78ab42; }
+.tetradic .colour4-8 {
+  background: #a1dc63; }
+.tetradic .colour4-t8 {
+  background: #78b23b; }
+.tetradic .colour4-9 {
+  background: #afe17a; }
+.tetradic .colour4-t9 {
+  background: #79ba33; }
+.tetradic .colour4-10 {
+  background: #bce690; }
+.tetradic .colour4-t10 {
+  background: #79c12c; }
+
+/**
+ * Pure Hue
+ *
+ * Return the full colour based on hue
+ *
+ * @param Color $colour The colour to get the pure hue of
+ * @return Color
+ */
+/**
+ * Get Shade
+ *
+ * Return a shade of the base colour, 100 increments are available from base
+ * colour (100) to black (0).
+ *
+ * @param Color $colour Base colour
+ * @param Int $shade Shade increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tint
+ *
+ * Return a tint of the base colour, 100 increments are available from base
+ * colour (0) to white (100)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tint Tint increment to return from 0 to 100
+ * @return Color
+ */
+/**
+ * Get Tone
+ *
+ * Return a tone of the base colour, 100 increments are available from base
+ * colour (100) to grey (0)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tone Tone increment to return from 0 to 1000
+ * @return Color
+ */
+/**
+ * Triadic
+ *
+ * Get a component of a triadic colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Analogous
+ *
+ * Get a component of an analogous colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Split
+ *
+ * Get a component of a split colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Tetradic
+ *
+ * Get a component of a tetradic colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+/**
+ * Square
+ *
+ * Get a component of a square colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+.square .colour1-0 {
+  background: #040c13;
+  clear: both; }
+.square .colour1-t0 {
+  background: #767676; }
+.square .colour1-1 {
+  background: #091827; }
+.square .colour1-t1 {
+  background: #6f777e; }
+.square .colour1-2 {
+  background: #0d243a; }
+.square .colour1-t2 {
+  background: #687785; }
+.square .colour1-3 {
+  background: #12304d; }
+.square .colour1-t3 {
+  background: #60778d; }
+.square .colour1-4 {
+  background: #163c60; }
+.square .colour1-t4 {
+  background: #597794; }
+.square .colour1-5 {
+  background: #2c79c1; }
+.square .colour1-t5 {
+  background: #51789c; }
+.square .colour1-6 {
+  background: #3787d1; }
+.square .colour1-t6 {
+  background: #4a78a3; }
+.square .colour1-7 {
+  background: #4d94d6; }
+.square .colour1-t7 {
+  background: #4278ab; }
+.square .colour1-8 {
+  background: #63a1dc; }
+.square .colour1-t8 {
+  background: #3b78b2; }
+.square .colour1-9 {
+  background: #7aafe1; }
+.square .colour1-t9 {
+  background: #3379ba; }
+.square .colour1-10 {
+  background: #90bce6; }
+.square .colour1-t10 {
+  background: #2c79c1; }
+.square .colour2-0 {
+  background: #130413;
+  clear: both; }
+.square .colour2-t0 {
+  background: #767676; }
+.square .colour2-1 {
+  background: #260927; }
+.square .colour2-t1 {
+  background: #7e6f7e; }
+.square .colour2-2 {
+  background: #390d3a; }
+.square .colour2-t2 {
+  background: #856885; }
+.square .colour2-3 {
+  background: #4c124d; }
+.square .colour2-t3 {
+  background: #8c608d; }
+.square .colour2-4 {
+  background: #5f1660; }
+.square .colour2-t4 {
+  background: #935994; }
+.square .colour2-5 {
+  background: #bf2cc1; }
+.square .colour2-t5 {
+  background: #9b519c; }
+.square .colour2-6 {
+  background: #cf37d1; }
+.square .colour2-t6 {
+  background: #a24aa3; }
+.square .colour2-7 {
+  background: #d44dd6; }
+.square .colour2-t7 {
+  background: #a942ab; }
+.square .colour2-8 {
+  background: #da63dc; }
+.square .colour2-t8 {
+  background: #b03bb2; }
+.square .colour2-9 {
+  background: #df7ae1; }
+.square .colour2-t9 {
+  background: #b733ba; }
+.square .colour2-10 {
+  background: #e490e6; }
+.square .colour2-t10 {
+  background: #bf2cc1; }
+.square .colour3-0 {
+  background: #130c04;
+  clear: both; }
+.square .colour3-t0 {
+  background: #767676; }
+.square .colour3-1 {
+  background: #271709; }
+.square .colour3-t1 {
+  background: #7e766f; }
+.square .colour3-2 {
+  background: #3a230d; }
+.square .colour3-t2 {
+  background: #857668; }
+.square .colour3-3 {
+  background: #4d2e12; }
+.square .colour3-t3 {
+  background: #8d7660; }
+.square .colour3-4 {
+  background: #603a16; }
+.square .colour3-t4 {
+  background: #947659; }
+.square .colour3-5 {
+  background: #c1742c; }
+.square .colour3-t5 {
+  background: #9c7551; }
+.square .colour3-6 {
+  background: #d18237; }
+.square .colour3-t6 {
+  background: #a3754a; }
+.square .colour3-7 {
+  background: #d68f4d; }
+.square .colour3-t7 {
+  background: #ab7542; }
+.square .colour3-8 {
+  background: #dc9d63; }
+.square .colour3-t8 {
+  background: #b2753b; }
+.square .colour3-9 {
+  background: #e1ab7a; }
+.square .colour3-t9 {
+  background: #ba7433; }
+.square .colour3-10 {
+  background: #e6b990; }
+.square .colour3-t10 {
+  background: #c1742c; }
+.square .colour4-0 {
+  background: #051304;
+  clear: both; }
+.square .colour4-t0 {
+  background: #767676; }
+.square .colour4-1 {
+  background: #092709; }
+.square .colour4-t1 {
+  background: #6f7e6f; }
+.square .colour4-2 {
+  background: #0e3a0d; }
+.square .colour4-t2 {
+  background: #688568; }
+.square .colour4-3 {
+  background: #134d12; }
+.square .colour4-t3 {
+  background: #618d60; }
+.square .colour4-4 {
+  background: #176016; }
+.square .colour4-t4 {
+  background: #5a9459; }
+.square .colour4-5 {
+  background: #2ec12c; }
+.square .colour4-t5 {
+  background: #529c51; }
+.square .colour4-6 {
+  background: #3ad137; }
+.square .colour4-t6 {
+  background: #4ba34a; }
+.square .colour4-7 {
+  background: #4fd64d; }
+.square .colour4-t7 {
+  background: #44ab42; }
+.square .colour4-8 {
+  background: #65dc63; }
+.square .colour4-t8 {
+  background: #3db23b; }
+.square .colour4-9 {
+  background: #7be17a; }
+.square .colour4-t9 {
+  background: #36ba33; }
+.square .colour4-10 {
+  background: #91e690; }
+.square .colour4-t10 {
+  background: #2ec12c; }

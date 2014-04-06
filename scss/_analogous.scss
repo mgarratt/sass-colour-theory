@@ -1,0 +1,22 @@
+@import "vars";
+@import "functions";
+
+.analogous {
+  @for $i from 1 through 3 {
+    @for $j from 0 through 10 {
+      .colour#{$i}-#{$j} {
+        @if $j < 5 {
+          background: get_shade(analogous($base, $i), ($j+1) * 10);
+          @if $j == 0 { clear: both; }
+        } @else if $j > 5 {
+          background: get_tint(analogous($base, $i), ($j - 5) * 10);
+        } @else {
+          background: analogous($base, $i);
+        }
+      }
+      .colour#{$i}-t#{$j} {
+        background: get_tone(analogous($base, $i), $j * 10);
+      }
+    }
+  }
+}

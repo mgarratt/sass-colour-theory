@@ -1,0 +1,22 @@
+@import "vars";
+@import "functions";
+
+.tetradic {
+  @for $i from 1 through 4 {
+    @for $j from 0 through 10 {
+      .colour#{$i}-#{$j} {
+        @if $j < 5 {
+          background: get_shade(tetradic($base, $i), ($j+1) * 10);
+          @if $j == 0 { clear: both; }
+        } @else if $j > 5 {
+          background: get_tint(tetradic($base, $i), ($j - 5) * 10);
+        } @else {
+          background: tetradic($base, $i);
+        }
+      }
+      .colour#{$i}-t#{$j} {
+        background: get_tone(tetradic($base, $i), $j * 10);
+      }
+    }
+  }
+}

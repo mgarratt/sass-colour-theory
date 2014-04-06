@@ -1,0 +1,168 @@
+/**
+ * Pure Hue
+ *
+ * Return the full colour based on hue
+ *
+ * @param Color $colour The colour to get the pure hue of
+ * @return Color
+ */
+@function pure_hue($colour) {
+  @return hsl(hue($colour), 100, 50);
+}
+
+/**
+ * Get Shade
+ *
+ * Return a shade of the base colour, 100 increments are available from base
+ * colour (100) to black (0).
+ *
+ * @param Color $colour Base colour
+ * @param Int $shade Shade increment to return from 0 to 100
+ * @return Color
+ */
+@function get_shade($colour, $shade) {
+  $shade: 100 - $shade;
+  $chunk: lightness($colour) / 100;
+  $lightness: lightness($colour) - ($shade * $chunk);
+  @return hsl(hue($colour), saturation($colour), $lightness);
+}
+
+/**
+ * Get Tint
+ *
+ * Return a tint of the base colour, 100 increments are available from base
+ * colour (0) to white (100)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tint Tint increment to return from 0 to 100
+ * @return Color
+ */
+@function get_tint($colour, $tint) {
+  $chunk: (100 - lightness($colour)) / 100;
+  $lightness: lightness($colour) + ($tint * $chunk);
+  @return hsl(hue($colour), saturation($colour), $lightness);
+}
+
+/**
+ * Get Tone
+ *
+ * Return a tone of the base colour, 100 increments are available from base
+ * colour (100) to grey (0)
+ *
+ * @param Color $colour Base colour
+ * @param Int $tone Tone increment to return from 0 to 1000
+ * @return Color
+ */
+@function get_tone($colour, $tone) {
+  $tone: 100 - $tone;
+  $chunk: saturation($colour) / 100;
+  $saturation: saturation($colour) - ($tone * $chunk);
+  @return hsl(hue($colour), $saturation, lightness($colour));
+}
+
+/**
+ * Triadic
+ *
+ * Get a component of a triadic colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+@function triadic($base, $num) {
+  @if ($num == 2) {
+    @return adjust_hue($base, 120);
+  }
+  @if ($num == 3) {
+    @return adjust_hue($base, -120);
+  }
+
+  @return $base;
+}
+
+/**
+ * Analogous
+ *
+ * Get a component of an analogous colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+@function analogous($base, $num) {
+  @if ($num == 2) {
+    @return adjust_hue($base, 30);
+  }
+  @if ($num == 3) {
+    @return adjust_hue($base, -30);
+  }
+
+  @return $base;
+}
+
+/**
+ * Split
+ *
+ * Get a component of a split colour scheme, numbered from 1 to 3
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+
+@function split($base, $num) {
+  @if ($num == 2) {
+    @return adjust_hue($base, 150);
+  }
+  @if ($num == 3) {
+    @return adjust_hue($base, -150);
+  }
+
+  @return $base;
+}
+
+/**
+ * Tetradic
+ *
+ * Get a component of a tetradic colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+@function tetradic($base, $num) {
+  @if ($num == 2) {
+    @return adjust_hue($base, 60);
+  }
+  @if ($num == 3) {
+    @return adjust_hue($base, 180);
+  }
+  @if ($num == 4) {
+    @return adjust_hue($base, 240);
+  }
+
+  @return $base;
+}
+
+/**
+ * Square
+ *
+ * Get a component of a square colour scheme, numbered from 1 to 4
+ *
+ * @param Color $base Base colour
+ * @param Int $num Colour from scheme to return
+ * @return Color
+ */
+@function square($base, $num) {
+  @if ($num == 2) {
+    @return adjust_hue($base, 90);
+  }
+  @if ($num == 3) {
+    @return adjust_hue($base, 180);
+  }
+  @if ($num == 4) {
+    @return adjust_hue($base, 270);
+  }
+
+  @return $base;
+}
